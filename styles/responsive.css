@@ -1,0 +1,404 @@
+/**
+ * 
+ * Savana - Ecommerce WordPress Theme. Exclusively on Envato Market: https://themeforest.net/user/idlayers/portfolio?ref=IDLayers
+ 
+ * @encoding     UTF-8
+ * @copyright    Copyright (C) 2025 IDLayers (http://idlayers.com). All rights reserved.
+ * @license      Envato Standard License http://themeforest.net/licenses/standard?ref=IDLayers
+ * @author       Oleksandr Kondratiuk (alex.sledg@gmail.com)
+ * @support      alex.sledg@gmail.com
+ * 
+ */
+
+/* ==========================================================================
+   RESPONSIVE STYLES - Mobile First Approach
+   ========================================================================== */
+
+/* Base styles are mobile-first in style.css */
+
+/* Small Tablet - 576px+ */
+@media (min-width: 576px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    
+    .post-card {
+        padding: 25px;
+    }
+}
+
+/* Tablet - 768px+ */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    /* Content Layout */
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+    
+    /* Typography */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    /* Navigation */
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .primary-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+    }
+    
+    .primary-menu li {
+        padding: 0;
+        border: none;
+    }
+    
+    /* Blog Grid */
+    .blog-grid.two-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-widget-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop - 1024px+ */
+@media (min-width: 1024px) {
+    /* Content Layout */
+    .content-wrapper {
+        gap: 60px;
+    }
+    
+    /* Sections */
+    section {
+        padding: 100px 0;
+    }
+    
+    /* Blog Grid */
+    .blog-grid.three-column {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer */
+    .footer-widget-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Header */
+    .header-container {
+        padding: 1.5rem 2rem;
+    }
+}
+
+/* Large Desktop - 1400px+ */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    
+    .entry-content {
+        font-size: 1.125rem;
+    }
+}
+
+/* Mobile Only - max-width: 767px */
+@media (max-width: 767px) {
+    /* Typography */
+    body {
+        font-size: 16px; /* Never smaller than 16px */
+    }
+    
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.125rem; }
+    
+    /* Container */
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Navigation */
+    .primary-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        transition: right 0.3s;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .primary-menu.active {
+        right: 0;
+    }
+    
+    .primary-menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 1000;
+    }
+    
+    /* Content */
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .entry-content {
+        font-size: 1rem;
+    }
+    
+    /* Blog Grid */
+    .blog-grid.two-column,
+    .blog-grid.three-column {
+        grid-template-columns: 1fr;
+    }
+    
+    /* One column post cards on mobile */
+    .one-column .post-card {
+        flex-direction: column;
+    }
+    
+    .one-column .post-thumbnail {
+        width: 100%;
+        height: 220px;
+        min-height: auto;
+    }
+    
+    .one-column .post-content {
+        width: 100%;
+        padding: 25px;
+    }
+    
+    .one-column .post-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Tables */
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Forms */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-size: 16px; /* Prevent zoom on iOS */
+        width: 100%;
+    }
+    
+    .btn,
+    .button,
+    button[type="submit"] {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    
+    /* Comments */
+    .comment {
+        padding: 15px;
+    }
+    
+    .comment .children {
+        margin-left: 20px;
+    }
+    
+    /* Footer */
+    .footer-widget-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Utilities */
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: block !important;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.25rem;
+    }
+    
+    /* Search */
+    .search-form {
+        flex-direction: column;
+    }
+    
+    .search-form .search-field {
+        border-radius: 4px;
+        border-right: 2px solid #ddd;
+        margin-bottom: 10px;
+    }
+    
+    .search-form .search-submit {
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    /* Post Navigation */
+    .post-navigation .nav-links {
+        flex-direction: column;
+    }
+    
+    /* Pagination */
+    .pagination {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .pagination .page-numbers {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape phones - max-width: 576px */
+@media (max-width: 576px) {
+    .site-title {
+        font-size: 1.3rem;
+    }
+    
+    .post-card {
+        padding: 15px;
+    }
+    
+    .widget {
+        padding: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    
+    /* Hide unnecessary elements when printing */
+    .site-header,
+    .site-footer,
+    .sidebar,
+    .widget-area,
+    .search-form,
+    .back-to-top,
+    .navigation,
+    .post-navigation,
+    .comments-area,
+    .comment-respond,
+    .mobile-menu-toggle,
+    .header-utilities,
+    button,
+    .btn {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .entry-content a {
+        color: #000 !important;
+    }
+}
