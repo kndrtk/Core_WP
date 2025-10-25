@@ -1,0 +1,98 @@
+ENVATO STANDARD LICENSE
+
+This theme is licensed under the Envato Standard License.
+
+License URI: http://themeforest.net/licenses/standard?ref=IDLayers
+
+Copyright (C) 2025 IDLayers (http://idlayers.com)
+All rights reserved.
+
+================================================================================
+
+PERMITTED USE
+
+The Envato Standard License grants you, the purchaser, an ongoing, non-exclusive, 
+worldwide license to make use of the digital work (Item) you have selected.
+
+You are licensed to use the Item to create one single End Product for yourself 
+or for one client (a "single application"), and the End Product can be 
+distributed for Free.
+
+================================================================================
+
+WHAT YOU CAN DO WITH THE ITEM
+
+You can:
+- Create one End Product for a client
+- Make modifications to the Item
+- Combine the Item with other works to create a derivative End Product
+- Use the Item in an End Product for personal or commercial use
+
+================================================================================
+
+WHAT YOU CANNOT DO WITH THE ITEM
+
+You cannot:
+- Re-distribute the Item as stock, in a tool or template, or with source files
+- Re-distribute or make available the Item as-is or with superficial modifications
+- Use the Item in any application allowing an end user to customize the Item
+- Use the Item in on-demand applications (e.g., "create your own" apps)
+- Use the Item in End Products that are sold (unless extended license purchased)
+
+================================================================================
+
+OTHER LICENSE TERMS
+
+- For some Items, a component of the Item will be sourced from elsewhere and 
+  different license terms may apply to that component.
+
+- The author of the Item retains ownership of the Item but grants you the 
+  license on these terms.
+
+- This license can be terminated if you breach it. If that happens, you must 
+  stop making copies of or distributing the End Product.
+
+- The author of the Item can't be held liable for any damages arising from 
+  your use of the Item.
+
+================================================================================
+
+GPL COMPATIBILITY
+
+This theme includes components that are GPL-compatible and can be freely 
+modified and distributed under GPL v2 or later:
+
+- PHP Code: GPL v2 or later
+- JavaScript: GPL v2 or later  
+- CSS: GPL v2 or later
+
+Third-party libraries and resources included in this theme are licensed under 
+their respective licenses (GPL-compatible).
+
+================================================================================
+
+ADDITIONAL RESOURCES
+
+For the complete license terms, please visit:
+http://themeforest.net/licenses/standard?ref=IDLayers
+
+For support and documentation, please contact:
+Email: alex.sledg@gmail.com
+Website: http://idlayers.com
+
+================================================================================
+
+DISCLAIMER
+
+THIS THEME IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE THEME OR THE USE OR OTHER DEALINGS IN THE 
+THEME.
+
+================================================================================
+
+Copyright (C) 2025 IDLayers
+All rights reserved.
