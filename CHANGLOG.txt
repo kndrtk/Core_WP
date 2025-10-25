@@ -1,0 +1,151 @@
+================================================================================
+NEW_THEME (SAVANA) - CHANGELOG
+================================================================================
+
+Version 1.0.0 - October 13, 2025
+================================================================================
+
+INITIAL RELEASE
+
+* Features Added:
+  - Fully responsive WordPress theme
+  - WooCommerce integration with custom styling
+  - Multiple blog layout options (1, 2, 3 columns)
+  - Post format support (Standard, Video, Audio, Gallery, Quote, Link, Image, Aside)
+  - Custom widget areas (Primary Sidebar, Footer 4 columns, Shop Sidebar)
+  - Child theme support
+  - Translation ready with .pot file
+  - Multi-language support (English, German, Spanish, Russian, Ukrainian)
+  - TGM Plugin Activation for required plugins
+  - Custom color options via Theme Customizer
+  - Google Fonts integration
+  - Mobile-first responsive design
+  - Accessibility support (WCAG AA compliant)
+  - SEO optimized structure
+  - Custom body classes for flexible styling
+  - Breadcrumb navigation
+  - Post pagination support
+  - Comments system with threaded comments
+  - Sticky post support
+  - Custom logo support
+  - Custom background support
+  - Navigation menus (Primary, Footer, Mobile)
+  - Search functionality
+  - 404 error page
+  - Archive pages
+  - Single post/page templates
+  - WooCommerce shop page
+  - WooCommerce product page
+  - WooCommerce cart page
+  - WooCommerce checkout page
+  - WooCommerce account page
+
+* Required Plugins:
+  - WooCommerce
+  - Contact Form 7
+  - Elementor
+
+* Recommended Plugins:
+  - Yoast SEO
+  - WP Super Cache
+  - Smush Image Optimization
+  - MailChimp for WordPress
+  - Wordfence Security
+
+* Files Included:
+  - Core theme files (functions.php, style.css, etc.)
+  - Template files (header.php, footer.php, sidebar.php, etc.)
+  - Template parts (content.php, content-single.php, etc.)
+  - JavaScript files (main.js, navigation.js, customizer.js)
+  - CSS files (custom.css, responsive.css, woocommerce.css, widgets.css)
+  - Inc files (body-classes.php, customizer.php, database.php, etc.)
+  - Translation files (.pot template)
+  - Documentation (README.txt, LICENSE.txt)
+  - Demo content (theme-demo-content.xml)
+
+* Security Features:
+  - All dynamic data properly escaped
+  - Data validation with strict type checking
+  - Database queries use $wpdb->prepare()
+  - Nonce verification for forms
+  - Capability checking for user actions
+  - GPL-compatible code and assets
+
+* Design Features:
+  - Clean and modern design
+  - Generous white space
+  - Clear visual hierarchy
+  - Consistent branding elements
+  - Professional typography
+  - Smooth animations and transitions
+  - Hover effects
+  - Loading states
+  - Back to top button
+  - Sticky header option
+  - Mobile hamburger menu
+  - Breadcrumb navigation
+  - Social media integration ready
+
+* Performance Optimizations:
+  - Lazy loading images
+  - Deferred JavaScript loading
+  - Optimized image sizes
+  - Minification ready
+  - Caching friendly
+  - CDN ready
+  - Fast page load times
+
+* Browser Compatibility:
+  - Chrome (latest)
+  - Firefox (latest)
+  - Safari (latest)
+  - Edge (latest)
+  - Opera (latest)
+  - Mobile browsers
+
+* Tested With:
+  - WordPress 6.4+
+  - PHP 7.4+
+  - WooCommerce 8.0+
+  - Contact Form 7 5.8+
+  - Elementor 3.15+
+
+================================================================================
+FUTURE UPDATES (PLANNED)
+================================================================================
+
+Version 1.1.0 (Planned)
+- Advanced theme options panel
+- More WooCommerce customization options
+- Additional widget styles
+- Performance improvements
+- Bug fixes and optimizations
+
+Version 1.2.0 (Planned)
+- RTL language support enhancements
+- Additional page templates
+- More color scheme options
+- Enhanced mobile experience
+
+================================================================================
+SUPPORT & DOCUMENTATION
+================================================================================
+
+For support, please contact:
+Email: alex.sledg@gmail.com
+Website: http://idlayers.com
+Theme URI: http://themeforest.net/user/idlayers
+
+Documentation will be provided separately.
+
+================================================================================
+COPYRIGHT & LICENSE
+================================================================================
+
+New_theme (Savana) WordPress Theme
+Copyright (C) 2025 IDLayers
+Licensed under the Envato Standard License
+
+For full license details, see LICENSE.txt
+
+================================================================================
