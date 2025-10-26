@@ -49,7 +49,7 @@
             
             wp_link_pages(
                 array(
-                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'New_theme' ),
+                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'new_theme' ),
                     'after'  => '</div>',
                 )
             );
@@ -57,7 +57,7 @@
             the_excerpt();
             ?>
             <a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more">
-                <?php esc_html_e( 'Read More', 'New_theme' ); ?> &rarr;
+                <?php esc_html_e( 'Read More', 'new_theme' ); ?> &rarr;
             </a>
             <?php
         endif;
