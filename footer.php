@@ -53,13 +53,13 @@
                 <p>
                     <?php
                     /* translators: 1: Theme name, 2: Theme author. */
-                    printf( esc_html__( 'Theme: %1$s by %2$s.', 'New_theme' ), 'New_theme', '<a href="http://idlayers.tk">IDLayers</a>' );
+                    printf( esc_html__( 'Theme: %1$s by %2$s.', 'new_theme' ), 'New_theme', '<a href="' . esc_url( __( 'http://idlayers.tk', 'new_theme' ) ) . '">IDLayers</a>' );
                     ?>
                 </p>
                 <p>
                     &copy; <?php echo esc_html( date( 'Y' ) ); ?> 
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>. 
-                    <?php esc_html_e( 'All rights reserved.', 'New_theme' ); ?>
+                    <?php esc_html_e( 'All rights reserved.', 'new_theme' ); ?>
                 </p>
             </div><!-- .site-info -->
             

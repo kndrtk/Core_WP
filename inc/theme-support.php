@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function idltm_theme_setup() {
     
     // Make theme available for translation
-    load_theme_textdomain( 'New_theme', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'new_theme', get_template_directory() . '/languages' );
     
     // Add default posts and comments RSS feed links to head
     add_theme_support( 'automatic-feed-links' );
@@ -43,8 +43,8 @@ function idltm_theme_setup() {
     // Register navigation menus
     register_nav_menus(
         array(
-            'primary' => esc_html__( 'Primary Menu', 'New_theme' ),
-            'footer'  => esc_html__( 'Footer Menu', 'New_theme' ),
+            'primary' => esc_html__( 'Primary Menu', 'new_theme' ),
+            'footer'  => esc_html__( 'Footer Menu', 'new_theme' ),
         )
     );
     
@@ -120,32 +120,76 @@ function idltm_theme_setup() {
     // Add support for wide and full alignment
     add_theme_support( 'align-wide' );
     
+    // Add support for block styles
+    add_theme_support( 'wp-block-styles' );
+    
+    // Register block patterns
+    register_block_pattern(
+        'new_theme/hero-section',
+        array(
+            'title'       => __( 'Hero Section', 'new_theme' ),
+            'description' => __( 'A hero section with heading, text, and button', 'new_theme' ),
+            'content'     => '<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+<div class="wp-block-group alignfull" style="padding-top:4rem;padding-bottom:4rem">
+    <!-- wp:heading {"level":1,"align":"center"} -->
+    <h1 class="has-text-align-center">Welcome to Our Website</h1>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Experience the difference with our premium products and services.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons">
+        <!-- wp:button -->
+        <div class="wp-block-button"><a class="wp-block-button__link">Learn More</a></div>
+        <!-- /wp:button -->
+    </div>
+    <!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->',
+            'categories'  => array( 'header' ),
+        )
+    );
+    
+    // Register block styles
+    register_block_style(
+        'core/button',
+        array(
+            'name'         => 'outline',
+            'label'        => __( 'Outline', 'new_theme' ),
+            'inline_style' => '.wp-block-button.is-style-outline .wp-block-button__link {
+                background-color: transparent;
+                border: 2px solid currentColor;
+                color: var(--wp--preset--color--primary);
+            }',
+        )
+    );
+    
     // Add support for editor color palette
     add_theme_support(
         'editor-color-palette',
         array(
             array(
-                'name'  => esc_html__( 'Primary', 'New_theme' ),
+                'name'  => esc_html__( 'Primary', 'new_theme' ),
                 'slug'  => 'primary',
                 'color' => '#19260a',
             ),
             array(
-                'name'  => esc_html__( 'Hover', 'New_theme' ),
+                'name'  => esc_html__( 'Hover', 'new_theme' ),
                 'slug'  => 'hover',
                 'color' => '#4992ff',
             ),
             array(
-                'name'  => esc_html__( 'Accent', 'New_theme' ),
+                'name'  => esc_html__( 'Accent', 'new_theme' ),
                 'slug'  => 'accent',
                 'color' => '#dd0055',
             ),
             array(
-                'name'  => esc_html__( 'Black', 'New_theme' ),
+                'name'  => esc_html__( 'Black', 'new_theme' ),
                 'slug'  => 'black',
                 'color' => '#1f1f1f',
             ),
             array(
-                'name'  => esc_html__( 'White', 'New_theme' ),
+                'name'  => esc_html__( 'White', 'new_theme' ),
                 'slug'  => 'white',
                 'color' => '#ffffff',
             ),

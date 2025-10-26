@@ -3,11 +3,13 @@
  * Theme URI: http://themeforest.net/user/idlayers
  * License: Envato Standard License
  * License URI: http://themeforest.net/licenses/standard?ref=IDLayers
- * Description: Сlean and simple design WordPress theme. Built with the eCommerce functionality in mind, is perfect to create a website for your eCommerce business. Savana is fully responsive Premium WooCommerce Theme with and extensive functionality.
+ * Description: Clean and simple design WordPress theme. Built with the eCommerce functionality in mind, is perfect to create a website for your eCommerce business.
  * Version: 1.0.0
  * Author: IDLayers
  * Author URI: http://idlayers.tk
- * Text Domain: New_theme
+ * Text Domain: new_theme
+ * Tested up to: 6.4
+ * Requires PHP: 7.4
  * Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
  */
 
@@ -536,7 +538,7 @@ mark {
     margin-bottom: 1rem;
 }
 
-/* WordPress Image Alignment */
+/* WordPress Required Classes */
 .alignleft {
     float: left;
     margin: 0.5em 1.5em 1em 0;
@@ -551,6 +553,69 @@ mark {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* WordPress Caption Classes */
+.wp-caption {
+    max-width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.wp-caption img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+.wp-caption-text {
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* WordPress Gallery Caption */
+.gallery-caption {
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin: 0.5em 0;
+}
+
+/* WordPress Sticky Post */
+.sticky {
+    background: #f9f9f9;
+    padding: 2em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+
+.sticky::before {
+    content: "Featured";
+    position: absolute;
+    top: -0.5em;
+    right: 1em;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    font-size: 0.8em;
+}
+
+/* WordPress Author Posts */
+.bypostauthor {
+    background: #f9f9f9;
+    padding: 1em;
+    border-left: 3px solid var(--color-primary);
     margin-bottom: 1em;
 }
 
