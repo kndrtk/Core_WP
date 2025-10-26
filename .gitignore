@@ -1,0 +1,12 @@
+# Ignore VS Code workspace file
+Core_WP.code-workspace
+
+# Node/npm artifacts
+node_modules/
+
+# Composer vendor
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
