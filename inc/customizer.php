@@ -47,7 +47,7 @@ function idltm_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'idltm_brand_colors',
         array(
-            'title'    => __( 'Brand Colors', 'New_theme' ),
+            'title'    => __( 'Brand Colors', 'new_theme' ),
             'priority' => 30,
         )
     );
@@ -66,8 +66,8 @@ function idltm_customize_register( $wp_customize ) {
         new WP_Customize_Color_Control(
             $wp_customize,
             'primary_color',
-            array(
-                'label'    => __( 'Primary Brand Color', 'New_theme' ),
+                array(
+                'label'    => __( 'Primary Brand Color', 'new_theme' ),
                 'section'  => 'idltm_brand_colors',
                 'settings' => 'primary_color',
             )
@@ -88,8 +88,8 @@ function idltm_customize_register( $wp_customize ) {
         new WP_Customize_Color_Control(
             $wp_customize,
             'hover_color',
-            array(
-                'label'    => __( 'Hover Color', 'New_theme' ),
+                array(
+                'label'    => __( 'Hover Color', 'new_theme' ),
                 'section'  => 'idltm_brand_colors',
                 'settings' => 'hover_color',
             )

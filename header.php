@@ -24,7 +24,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'New_theme' ); ?></a>
+<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'new_theme' ); ?></a>
 
 <div id="page" class="site">
     <header id="masthead" class="site-header">
@@ -54,7 +54,7 @@
             
             <nav id="site-navigation" class="main-navigation">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                    <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'New_theme' ); ?></span>
+                    <span class="screen-reader-text"><?php esc_html_e( 'Menu', 'new_theme' ); ?></span>
                     <span class="menu-icon">☰</span>
                 </button>
                 <?php

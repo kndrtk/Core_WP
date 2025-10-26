@@ -36,7 +36,7 @@
         the_content(
             sprintf(
                 wp_kses(
-                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'New_theme' ),
+                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'new_theme' ),
                     array(
                         'span' => array(
                             'class' => array(),
@@ -49,7 +49,7 @@
         
         wp_link_pages(
             array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'New_theme' ),
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'new_theme' ),
                 'after'  => '</div>',
             )
         );

@@ -30,7 +30,7 @@
         
         wp_link_pages(
             array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'New_theme' ),
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'new_theme' ),
                 'after'  => '</div>',
             )
         );
@@ -43,7 +43,7 @@
             edit_post_link(
                 sprintf(
                     wp_kses(
-                        __( 'Edit <span class="screen-reader-text">%s</span>', 'New_theme' ),
+                        __( 'Edit <span class="screen-reader-text">%s</span>', 'new_theme' ),
                         array(
                             'span' => array(
                                 'class' => array(),

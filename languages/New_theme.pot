@@ -2,7 +2,7 @@
 # This file is distributed under the Envato Standard License.
 msgid ""
 msgstr ""
-"Project-Id-Version: New_theme 1.0.0\n"
+"Project-Id-Version: new_theme 1.0.0\n"
 "Report-Msgid-Bugs-To: alex.sledg@gmail.com\n"
 "POT-Creation-Date: 2025-10-13 12:00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: WordPress\n"
-"X-Domain: New_theme\n"
+"X-Domain: new_theme\n"
 
 #: functions.php
 msgid "Primary Menu"

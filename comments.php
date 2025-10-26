@@ -23,14 +23,14 @@ if ( post_password_required() ) {
         <h2 class="comments-title">
             <?php
             $idltm_comment_count = get_comments_number();
-            if ( '1' === $idltm_comment_count ) {
+                if ( '1' === $idltm_comment_count ) {
                 printf(
-                    esc_html__( 'One comment on &ldquo;%s&rdquo;', 'New_theme' ),
+                    esc_html__( 'One comment on &ldquo;%s&rdquo;', 'new_theme' ),
                     '<span>' . wp_kses_post( get_the_title() ) . '</span>'
                 );
             } else {
                 printf(
-                    esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $idltm_comment_count, 'comments title', 'New_theme' ) ),
+                    esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $idltm_comment_count, 'comments title', 'new_theme' ) ),
                     number_format_i18n( $idltm_comment_count ),
                     '<span>' . wp_kses_post( get_the_title() ) . '</span>'
                 );
@@ -55,7 +55,7 @@ if ( post_password_required() ) {
         
         if ( ! comments_open() ) :
             ?>
-            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'New_theme' ); ?></p>
+            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'new_theme' ); ?></p>
             <?php
         endif;
         

@@ -20,19 +20,19 @@ get_header();
         <div class="error-404 not-found">
             
             <header class="page-header">
-                <h1 class="page-title"><?php esc_html_e( '404', 'New_theme' ); ?></h1>
-                <p class="page-subtitle"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'New_theme' ); ?></p>
+                <h1 class="page-title"><?php esc_html_e( '404', 'new_theme' ); ?></h1>
+                <p class="page-subtitle"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'new_theme' ); ?></p>
             </header><!-- .page-header -->
             
             <div class="page-content">
-                <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'New_theme' ); ?></p>
+                <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'new_theme' ); ?></p>
                 
                 <?php get_search_form(); ?>
                 
                 <div class="error-404-widgets">
                     
                     <div class="widget widget_recent_entries">
-                        <h3 class="widget-title"><?php esc_html_e( 'Recent Posts', 'New_theme' ); ?></h3>
+                        <h3 class="widget-title"><?php esc_html_e( 'Recent Posts', 'new_theme' ); ?></h3>
                         <?php
                         wp_nav_menu(
                             array(
@@ -46,7 +46,7 @@ get_header();
                     </div>
                     
                     <div class="widget widget_categories">
-                        <h3 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'New_theme' ); ?></h3>
+                        <h3 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'new_theme' ); ?></h3>
                         <ul>
                             <?php
                             wp_list_categories(
@@ -63,7 +63,7 @@ get_header();
                     </div>
                     
                     <div class="widget widget_archive">
-                        <h3 class="widget-title"><?php esc_html_e( 'Archives', 'New_theme' ); ?></h3>
+                        <h3 class="widget-title"><?php esc_html_e( 'Archives', 'new_theme' ); ?></h3>
                         <ul>
                             <?php
                             wp_get_archives(
@@ -77,7 +77,7 @@ get_header();
                     </div>
                     
                     <div class="widget widget_tag_cloud">
-                        <h3 class="widget-title"><?php esc_html_e( 'Tags', 'New_theme' ); ?></h3>
+                        <h3 class="widget-title"><?php esc_html_e( 'Tags', 'new_theme' ); ?></h3>
                         <?php wp_tag_cloud(); ?>
                     </div>
                     
