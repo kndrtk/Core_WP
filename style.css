@@ -448,6 +448,80 @@ mark {
     color: var(--color-hover);
 }
 
+/* Three-level navigation styles: support dropdown + flyout (3 levels)
+   - level-1: top-level menu (horizontal)
+   - level-2: first dropdown (beneath top-level item)
+   - level-3: flyout panels from level-2 items
+*/
+.main-navigation ul li {
+    position: relative; /* needed for absolute-positioned submenus */
+}
+
+.main-navigation ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background: #fff;
+    min-width: 220px;
+    padding: 0.5rem 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+.main-navigation ul ul li {
+    display: block;
+}
+
+.main-navigation ul ul a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-black);
+}
+
+/* third level: flyout to the right of level-2 */
+.main-navigation ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    min-width: 220px;
+}
+
+/* Show submenu on hover or when focused (accessibility) */
+.main-navigation li:focus-within > ul,
+.main-navigation li:hover > ul {
+    display: block;
+}
+
+/* Allow keyboard users to navigate: focus makes submenu visible */
+.main-navigation a:focus + ul,
+.main-navigation a:focus-within + ul {
+    display: block;
+}
+
+/* Tweak responsive/mobile: keep toggled behaviour (existing class) */
+@media (max-width: 767px) {
+    .main-navigation ul {
+        display: none; /* kept controlled by .main-navigation.toggled */
+        flex-direction: column;
+        gap: 0;
+    }
+    .main-navigation ul ul,
+    .main-navigation ul ul ul {
+        position: static;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+    .main-navigation li:focus-within > ul,
+    .main-navigation li:hover > ul {
+        display: none; /* mobile toggles via JS; avoid hover display */
+    }
+    .main-navigation.toggled ul {
+        display: flex;
+    }
+}
+
 /* Mobile Navigation Toggle */
 .menu-toggle {
     display: none;
