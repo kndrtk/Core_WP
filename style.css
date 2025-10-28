@@ -575,15 +575,44 @@ mark {
 }
 
 .entry-meta {
-    color: #777;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+.entry-meta > * {
+    margin-right: 20px;
+}
+
+.posted-on,
+.byline {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.posted-on::before {
+    content: "📅 ";
+    margin-right: 5px;
+}
+
+.byline::before {
+    content: "👤 ";
+    margin-right: 5px;
 }
 
 .entry-meta a {
     color: #4992ff;
     color: var(--color-hover);
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.entry-meta a:hover {
+    color: #19260a;
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 .post-thumbnail {
@@ -699,6 +728,22 @@ mark {
     padding-top: 1.5rem;
     border-top: 1px solid #e0e0e0;
     clear: both;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.entry-footer > * {
+    margin-right: 25px;
+    margin-bottom: 12px;
+}
+
+.cat-links,
+.tags-links,
+.comments-link,
+.edit-link {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 12px;
 }
 
 .post-categories,
