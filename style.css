@@ -602,7 +602,6 @@ mark {
 }
 
 .entry-meta a {
-    color: #4992ff;
     color: var(--color-hover);
     text-decoration: none;
     font-weight: 500;
@@ -610,7 +609,6 @@ mark {
 }
 
 .entry-meta a:hover {
-    color: #19260a;
     color: var(--color-primary);
     text-decoration: underline;
 }
